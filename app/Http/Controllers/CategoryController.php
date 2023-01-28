@@ -39,7 +39,12 @@ class CategoryController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $NuevaCategoria = $request->validate([
+            'name' => 'required',
+            'type' => 'required',
+        ]);
+        Category::create($NuevaCategoria);
+        return redirect() ->route('category.index');
     }
 
     /**
@@ -51,7 +56,7 @@ class CategoryController extends Controller
     public function show($id)
     {
         $category = Category::find($id);
-        return Inertia::render('Category/show', ['category'=>$category,]);
+        return Inertia::render('Category/show', ['category'=>$category]);
     }
 
     /**
@@ -62,7 +67,8 @@ class CategoryController extends Controller
      */
     public function edit($id)
     {
-        return Inertia::render('Category/edit');
+        $category = Category::find($id);
+        return Inertia::render('Category/edit', ['category'=>$category]);
     }
 
     /**
@@ -74,7 +80,15 @@ class CategoryController extends Controller
      */
     public function update(Request $request, $id)
     {
-        return Inertia::render('Category/update');
+        $UpdatedCategory = $request->validate([
+            'name'=>'required',
+            'type'=>'required'
+        ]);
+        $category = Category::find($id);
+        $category->name = $UpdatedCategory['name'];
+        $category->type = $UpdatedCategory['type'];
+        $category->save();
+        return redirect() ->route('category.index');
     }
 
     /**

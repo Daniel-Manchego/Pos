@@ -48,11 +48,11 @@ defineProps({
                             <td>
                                 {{ category.type }}
                             </td>
-                            <td>
-                                <button class="m-7 p-2 bg-slate-800 hover:bg-slate-400 rounded text-white" v-bind:href="route('category.show', category.id)"> Ver Datos </button>
+                            <td class="py-3">
+                                <Link class="m-2 py-2 px-4 my-5 bg-slate-800 hover:bg-slate-400 rounded text-white" v-bind:href="route('category.show', category.id)"> Ver Datos </Link>
                             </td>
                             <td>
-                                <button class="p-2 bg-slate-800 hover:bg-slate-400 rounded text-white" v-bind:href="route('category.show', category.id)"> Editar </button>
+                                <Link class="m-2 py-2 px-4 my-5 bg-slate-800 hover:bg-slate-400 rounded text-white" v-bind:href="route('category.edit', category.id)"> Editar </Link>
                             </td>
                         </tr>
                     </tbody>

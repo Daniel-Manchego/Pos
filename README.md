@@ -14,7 +14,7 @@ Codigos de Inicio:
 - Levantar FrontEnd: php artisan serve
 - Levantar BackEnd: npm run dev
 
-## Sistema de Puntos de Venta
+## Inicio 
 
 Creacion y primeros cambios a aplicacion. Desarrollo de Index, Show aplicando código VueJs y TailwindCSS
 
@@ -26,13 +26,15 @@ Creacion y primeros cambios a aplicacion. Desarrollo de Index, Show aplicando c�
 
 Futuros Cambios seran realizados.
 
-## Learning Laravel
+## Actualizacion 1
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Se añaden los botones de editar y crear nueva categoría con sus respectivos formularios, mas cambios en front.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- Boton Editar y Nueva Categoría.
+- Estilos TailwindCSS botones.
+- Formulario Añadir nueva Categoría.
+- Formulario Editar Categoría.
+- Edicion Comprobada en BD.
 
 ## Laravel Sponsors
 
