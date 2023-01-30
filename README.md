@@ -36,9 +36,14 @@ Se añaden los botones de editar y crear nueva categoría con sus respectivos fo
 - Formulario Editar Categoría.
 - Edicion Comprobada en BD.
 
-## Laravel Sponsors
+## Actualizacion 2
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+Conclusion de funciones basicas para las categorias.
+
+- Boton Eliminar.
+- Actualizacion en controlador.
+- Mejora de codigo en show.vue de useForm.
+- Delete completo en base de datos.
 
 ### Premium Partners
 
